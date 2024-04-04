@@ -1,0 +1,11 @@
+name: Actions Test
+on:
+  push:
+    branches:
+      - master
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Hello
+      run: echo "Hey Sexy!"
