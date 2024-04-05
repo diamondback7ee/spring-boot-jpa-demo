@@ -1,0 +1,13 @@
+name: Develop CI
+on:
+  push:
+    branches:
+      - develop
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello, Develop! Develop CI is running!"
+      - name: Checkout code
+        uses: actions/checkout@v2
