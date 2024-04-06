@@ -31,6 +31,7 @@ public class StudentService {
 
 
     public void deleteStudent(Long id) {
+        studentRepository.deleteById(id);
     }
 
     public List<Student> getStudents() {
