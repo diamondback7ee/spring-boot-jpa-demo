@@ -4,20 +4,22 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
-import java.time.LocalDate;
 import java.util.List;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @RequiredArgsConstructor
-public class Student {
+public class Course {
     @NotNull
     @NonNull
-    private String name;
+    private String subject;
     @NotNull
     @NonNull
-    private LocalDate birthDate;
+    private String code;
+    @NotNull
+    @NonNull
+    private String description;
 
     @JsonIgnore
     private List<Grade> grades;
